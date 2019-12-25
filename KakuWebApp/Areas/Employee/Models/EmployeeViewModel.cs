@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace KakuWebApp.Areas.Employee.Models
 {
-    public class Employee
+    public class EmployeeViewModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         public string name { get; set; }
         public int age { get; set; }
-        public byte[] profile { get; set; }
+        public byte?[] profile { get; set; }
     }
 }
